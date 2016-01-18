@@ -1,0 +1,8 @@
+#!/bin/bash
+
+rm -rf build
+mkdir build
+cd build
+cmake -DBUILD_SHARED_LIBS=ON -DCMAKE_TOOLCHAIN_FILE=../mingw32-toolchain.cmake ../../nordlicht/ && make VERBOSE=1
+
+cp /usr/i686-w64-mingw32/bin/{libmman.dll,libpopt-0.dll,libwinpthread-1.dll,avcodec-56.dll,avformat-56.dll,avutil-54.dll,swscale-3.dll,libbluray-1.dll,libbz2-1.dll,libgcc_s_sjlj-1.dll,libgsm.dll.1.0.13,libiconv-2.dll,libintl-8.dll,libmodplug-1.dll,libmp3lame-0.dll,libopencore-amrnb-0.dll,libopencore-amrwb-0.dll,libopenjpeg-1.dll,libopus-0.dll,librtmp-1.dll,libspeex-1.dll,libtheoradec-1.dll,libtheoraenc-1.dll,libvorbis-0.dll,libvorbisenc-2.dll,libx265.dll,swresample-1.dll,libxml2-2.dll,zlib1.dll,libdcadec.dll,liblzma-5.dll,libschroedinger-1.0-0.dll,libogg-0.dll,libwebp-6.dll,liborc-0.4-0.dll,libvpx.dll.2.0.0,libwebpmux-2.dll,libx264-148.dll,libstdc++-6.dll,xvidcore.dll,libsoxr.dll,libgomp-1.dll,libfreetype-6.dll,libgmp-10.dll,libgnutls-30.dll,libhogweed-4-1.dll,libnettle-6-1.dll,libtasn1-6.dll,libffi-6.dll,libp11-kit-0.dll,libssh.dll,libeay32.dll} .
